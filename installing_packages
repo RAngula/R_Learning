@@ -1,0 +1,13 @@
+##For this example, we will be installing the visualization package: 'ggplot2' ((grammar of graphics) which can be used to visualize your data), and
+an example dataset "Palmer Penguins"
+
+First the packages need to be installed##
+
+install.packages("ggplot2")
+install.packages("palmerpenguins")
+
+##Once these packages have been installed, they need to be loaded:##
+
+library(ggplot2)
+library(palmerpenguins)
+
