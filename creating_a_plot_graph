@@ -1,0 +1,5 @@
+##Once you have data installed and a package for visualizing your data, you can create graphs. This example will generate a plot graph using the 
+palmer penguins dataset previously detailed.##
+
+ggplot(data = penguins) + geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g))
+
