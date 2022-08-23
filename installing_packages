@@ -1,8 +1,9 @@
 ##For this example, we will be installing the visualization package: 'ggplot2' ((grammar of graphics) which can be used to visualize your data), and
-an example dataset "Palmer Penguins"
+an example dataset "Palmer Penguins". We will also need to install another package, "Tidyverse" which contains ggplot2 as part of the package.
 
 First the packages need to be installed##
 
+install.packages("tidyverse")
 install.packages("ggplot2")
 install.packages("palmerpenguins")
 
