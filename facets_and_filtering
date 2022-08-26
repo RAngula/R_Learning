@@ -1,0 +1,16 @@
+##Facetting your data in R allows you to partition a plot into a matrix of panels. Perhaps you want to answer a specific question by comparing different variables
+across your data. This is where fascets come in. 
+
+Using the same penguin dataset as mentioned previously, this is how you might create a scattergraph while incuding a facet##
+
+ggplot(data=penguins)+
+geom_point(mapping=aes(x=flipper_length_mm,y=body_mass_g,color=species))+
+facet_wrap(~species)
+
+##for multiple variables, use facet_grid##
+
+ggplot(data=penguins)+
+geom_point(mapping=aes(x=flipper_length_mm,y=body_mass_g,color=species))+
+facet_grid(sex~species)
+
+##By playing around with different variations of facets, you can discover new relationships in your data and really understand the variables.## 
