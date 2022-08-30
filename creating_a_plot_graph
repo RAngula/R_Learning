@@ -3,3 +3,27 @@ palmer penguins dataset previously detailed.##
 
 ggplot(data = penguins) + geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g))
 
+##If you want to add a title, a sub-title, or caption to your graph, you can do so like this:##
+
+ggplot(data = penguins) + geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g))+
+labs(title="Palmer Penguins: Body Mass vs. Flipper Length", subtitle="Sample of Three Penguin Species")+
+caption="Data collected by Dr. Kristen Gorman")
+
+##if you need to annotate the graph, you can do so by adding the following to the above:##
+
++
+annotate("text", x=220,y=3500,label=2The Gentoos are the largest")
+
+
+
+##If the code is getting a bit long, you can save the plot as a variable by doing the following:##
+
+p<- ggplot(data = penguins) + geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g))+
+labs(title="Palmer Penguins: Body Mass vs. Flipper Length", subtitle="Sample of Three Penguin Species")
+
+
+
+##This way, when you want to add anything new, you only have to add a +. For example##
+
+p+annotate("text", x=220,y=3500,label=2The Gentoos are the largest") 
+
